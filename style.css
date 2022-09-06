@@ -75,6 +75,11 @@ body {
    border-radius: 7px;
    padding: 30px 30px 35px;
    background: var(--primary);
+   transition: height 0.2 ease;
+}
+
+.wrapper.active {
+   height: 525px;
 }
 
 .wrapper form {
@@ -86,6 +91,12 @@ body {
    align-items: center;
    justify-content: center;
    text-align: center;
+   transition: 0.2 ease;
+}
+
+.wrapper.active form {
+   height: 225px;
+   pointer-events: none;
 }
 
 form img {
@@ -93,8 +104,12 @@ form img {
    max-width: 148px;
 }
 
-form .content {
-   /* display: none; */
+.wrapper.active form img {
+   display: none;
+}
+
+.wrapper.active form .content {
+   display: none;
 }
 
 form .content i {
@@ -112,6 +127,12 @@ form .content p {
    margin-top: 25px;
    opacity: 0;
    pointer-events: none;
+}
+
+.wrapper.active .details {
+   opacity: 1;
+   pointer-events: auto;
+   transition: opacity 0.5s 0.5 ease;
 }
 
 .details textarea {
