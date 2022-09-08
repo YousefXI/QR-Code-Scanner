@@ -4,7 +4,6 @@
 
 :root {
    --primary: #d4aa73;
-   --secondary: #3ea9eb;
    --gray: #bbc5cf;
    --dark-gray: #464646;
    --light: #ffffff;
@@ -165,4 +164,8 @@ form .content p {
    border-radius: 5px;
    font-size: 16px;
    font-weight: 500;
+}
+
+.buttons button:hover {
+   background: #eee;
 }
