@@ -3,7 +3,7 @@
 /* ------------------ */
 
 :root {
-   --primary: #53b3ef;
+   --primary: #d4aa73;
    --secondary: #3ea9eb;
    --gray: #bbc5cf;
    --dark-gray: #464646;
@@ -76,6 +76,7 @@ body {
    padding: 30px 30px 35px;
    background: var(--primary);
    transition: height 0.2 ease;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .wrapper.active {
@@ -154,6 +155,7 @@ form .content p {
 }
 
 .buttons button {
+   cursor: pointer;
    height: 55px;
    width: calc(100% / 2 - 10px);
    outline: none;
