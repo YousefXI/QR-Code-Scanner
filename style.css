@@ -91,7 +91,7 @@ body {
    align-items: center;
    justify-content: center;
    text-align: center;
-   transition: 0.2 ease;
+   transition: height 0.2 ease;
 }
 
 .wrapper.active form {
@@ -105,7 +105,7 @@ form img {
 }
 
 .wrapper.active form img {
-   display: none;
+   display: block;
 }
 
 .wrapper.active form .content {

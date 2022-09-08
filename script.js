@@ -1,7 +1,8 @@
 const wrapper = document.querySelector(".wrapper"),
    form = wrapper.querySelector("form"),
-   fileInp = form.querySelector("input");
-infoText = form.querySelector("p");
+   fileInp = form.querySelector("input"),
+   infoText = form.querySelector("p"),
+   qrCode = form.querySelector("img");
 
 function fetchRequest(formData, file) {
    infoText.innerText = "Scanning QR Code...";
@@ -15,7 +16,7 @@ function fetchRequest(formData, file) {
       .then((result) => {
          result = result[0].symbol[0].data;
          wrapper.querySelector("textarea").innerText = result;
-         form.querySelector("img").src = URL.createObjectURL(file);
+         qrCode.src = URL.createObjectURL(file);
          infoText.innerText = "Upload QR Code to Scan";
          wrapper.classList.add("active");
       });
