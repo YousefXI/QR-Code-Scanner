@@ -4,8 +4,8 @@
 
 :root {
    --primary: #d4aa73;
-   --gray: #bbc5cf;
-   --dark-gray: #464646;
+   --gray: #e3e3e3;
+   --dark-gray: #7c7b7b;
    --light: #ffffff;
 }
 
@@ -145,6 +145,20 @@ form .content p {
    border-radius: 5px;
    font-variant-position: 18px;
    border: 1px solid var(--light);
+   resize: none;
+}
+
+textarea::-webkit-scrollbar {
+   width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+   background: var(--primary);
+   padding-right: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+   background: var(--gray);
 }
 
 .details .buttons {
